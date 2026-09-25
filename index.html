@@ -60,6 +60,13 @@
     .price-card p { margin:0; color:var(--muted); }
 
 
+    .team { background:var(--ink); color:#fff; }
+    .team .eyebrow { color:#83adff; }
+    .team .section-copy { color:#cad8e8; }
+    .team-card { display:grid; gap:18px; margin-top:38px; padding:28px; border:1px solid rgba(216,230,248,.25); }
+    .team-card h3 { margin:0; font-size:1.35rem; }
+    .team-card p { margin:0; color:#cad8e8; }
+    .team-card .role { color:#83adff; font-weight:800; font-size:.85rem; letter-spacing:.08em; text-transform:uppercase; }
     .contact { background:#fff; }
     .contact-grid { display:grid; gap:30px; }
     .contact-methods { display:grid; gap:12px; margin-top:25px; }
@@ -78,7 +85,7 @@
     .mobile-bar { position:fixed; bottom:0; left:0; right:0; z-index:12; display:grid; grid-template-columns:1fr 1fr; gap:1px; border-top:1px solid #9ab6e4; background:#9ab6e4; }
     .mobile-bar a { display:flex; min-height:56px; align-items:center; justify-content:center; background:var(--ink); color:#fff; font-weight:900; text-decoration:none; }
     .mobile-bar a:last-child { background:var(--blue); }
-    @media (min-width:720px) { .hero-wrap{padding:120px 0 115px}.intro{grid-template-columns:1.15fr .85fr}.service{grid-template-columns:80px 1.15fr .85fr;gap:30px;align-items:start}.price-grid{grid-template-columns:repeat(3,1fr)}.contact-grid{grid-template-columns:.9fr 1.1fr;align-items:start}.contact-card{padding:32px}.mobile-bar{display:none}footer{padding-bottom:32px} }
+    @media (min-width:720px) { .hero-wrap{padding:120px 0 115px}.intro{grid-template-columns:1.15fr .85fr}.service{grid-template-columns:80px 1.15fr .85fr;gap:30px;align-items:start}.price-grid{grid-template-columns:repeat(3,1fr)}.team-card{grid-template-columns:200px 1fr;align-items:start}.contact-grid{grid-template-columns:.9fr 1.1fr;align-items:start}.contact-card{padding:32px}.mobile-bar{display:none}footer{padding-bottom:32px} }
     @media (max-width:600px) { nav a:not(.button){display:none}.shell{width:min(100% - 32px,1140px)} }
     @media (prefers-reduced-motion:reduce) { html{scroll-behavior:auto}*,*:before,*:after{transition-duration:.01ms!important;animation-duration:.01ms!important} }
   </style>
@@ -88,7 +95,7 @@
   <header>
     <div class="shell nav">
       <a class="brand" href="#top" aria-label="Virtus home">VIRT<b>U</b>S</a>
-      <nav aria-label="Main navigation"><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a><a class="button" href="tel:+14322036086">Call Virtus</a></nav>
+      <nav aria-label="Main navigation"><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#team">Team</a><a href="#contact">Contact</a><a class="button" href="tel:+14322878626">Call Virtus</a></nav>
     </div>
   </header>
   <main id="main">
@@ -96,7 +103,7 @@
       <p class="eyebrow">Odessa, Texas. Serving Midland and Odessa.</p>
       <h1>Technology that helps your business move.</h1>
       <p class="hero-copy">Virtus builds websites, business apps, and practical IT support for small businesses that need dependable tools without an enterprise contract.</p>
-      <div class="actions"><a class="button" href="tel:+14322036086">Call (432) 203-6086</a><a class="button alt" href="mailto:virtustxtech@gmail.com">Email Virtus</a></div>
+      <div class="actions"><a class="button" href="tel:+14322878626">Call (432) 287-8626</a><a class="button alt" href="mailto:virtustxtech@gmail.com">Email Virtus</a></div>
       <div class="hero-proof"><span>Web design</span><span>App development</span><span>IT support</span></div>
     </div></div></section>
     <section class="services" id="services"><div class="shell">
@@ -112,12 +119,20 @@
     </div></section>
 
 
-    <section class="contact" id="contact"><div class="shell contact-grid"><div><p class="eyebrow">Contact Virtus</p><h2>Let us know what your business needs next.</h2><p class="section-copy">Call or email for website work, business apps, and small business IT support in Midland and Odessa.</p><div class="contact-methods"><a class="contact-link" href="tel:+14322036086"><span><small>Call Virtus</small>(432) 203-6086</span></a><a class="contact-link" href="mailto:virtustxtech@gmail.com"><span><small>Email Virtus</small>virtustxtech@gmail.com</span></a></div></div>
+    <section class="team" id="team"><div class="shell">
+      <div class="intro"><div><p class="eyebrow">Who you're working with</p><h2>Run by one person, built to move fast.</h2></div><p class="section-copy">Virtus is a small, local operation, not a call center or a large agency.</p></div>
+      <article class="team-card">
+        <div><span class="role">Owner / Operator</span></div>
+        <div><h3>Ruben Romero</h3><p>Ruben owns and runs Virtus, handling web design, app development, and IT support for small businesses across Midland and Odessa. Virtus uses AI-assisted tools to work faster and keep prices low, while Ruben stays directly responsible for every project and every client conversation.</p></div>
+      </article>
+    </div></section>
+
+    <section class="contact" id="contact"><div class="shell contact-grid"><div><p class="eyebrow">Contact Virtus</p><h2>Let us know what your business needs next.</h2><p class="section-copy">Call or text for the fastest response, or email for website work, business apps, and small business IT support in Midland and Odessa.</p><div class="contact-methods"><a class="contact-link" href="tel:+14322878626"><span><small>Call or text Virtus</small>(432) 287-8626</span></a><a class="contact-link" href="tel:+14322036086"><span><small>Alternate line</small>(432) 203-6086</span></a><a class="contact-link" href="mailto:virtustxtech@gmail.com"><span><small>Email Virtus</small>virtustxtech@gmail.com</span></a></div></div>
       <div class="contact-card"><form id="lead-form"><label>Your name<input name="name" autocomplete="name" required></label><label>Business email<input name="email" type="email" autocomplete="email" required></label><label>How can Virtus help?<textarea name="message" required></textarea></label><button class="button" type="submit">Email this request to Virtus</button><p class="form-note">Submitting opens your email app with this request addressed to Virtus.</p><p id="form-status" aria-live="polite"></p></form></div>
     </div></section>
   </main>
-  <footer><div class="shell footer-row"><span class="brand">VIRT<b>U</b>S</span><span>Independent web design and IT support for Midland and Odessa small businesses.</span></div></footer>
-  <div class="mobile-bar" aria-label="Quick contact"><a href="tel:+14322036086">Call Virtus</a><a href="mailto:virtustxtech@gmail.com">Email Virtus</a></div>
+  <footer><div class="shell footer-row"><span class="brand">VIRT<b>U</b>S</span><span>Independent web design and IT support for Midland and Odessa small businesses. Call (432) 287-8626 or (432) 203-6086, or email virtustxtech@gmail.com.</span></div></footer>
+  <div class="mobile-bar" aria-label="Quick contact"><a href="tel:+14322878626">Call Virtus</a><a href="mailto:virtustxtech@gmail.com">Email Virtus</a></div>
   <script>
     const form=document.querySelector('#lead-form'); const status=document.querySelector('#form-status');
     form.addEventListener('submit',event=>{event.preventDefault();if(!form.checkValidity()){status.textContent='Please complete every field with a valid email address.';form.reportValidity();return;}const data=new FormData(form);const subject=encodeURIComponent('Virtus website request from '+data.get('name'));const body=encodeURIComponent('Name: '+data.get('name')+'\nEmail: '+data.get('email')+'\n\nHow Virtus can help:\n'+data.get('message'));status.textContent='Opening your email app.';window.location.href='mailto:virtustxtech@gmail.com?subject='+subject+'&body='+body;});
